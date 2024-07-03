@@ -1,3 +1,4 @@
+import Appointment from "../../components/Appointment/Appointment";
 import Banner from "../../components/Banner/Banner";
 import Faq from "../../components/Faq/Faq";
 import Menubar from "../../components/Menubar/Menubar";
@@ -15,6 +16,7 @@ const Home = () => {
             <Service/>
             <Testimonial/>
             <Faq/>
+            <Appointment/>
             <Footer/>
         </div>
     );
