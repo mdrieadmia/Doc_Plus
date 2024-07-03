@@ -23,7 +23,7 @@ const Banner = () => {
                                 <img src="https://i.postimg.cc/WbbfD5VB/badge.png" alt="Pie Image" />
                             </div>
                         </div>
-                        <div className="bg-white p-5 border-2 border-gray-300 rounded-2xl w-full">
+                        <div className="bg-white p-5 border border-gray-300 rounded-2xl w-full">
                             <h3 className="text-[40px] flex items-center gap-2 font-semibold text-[#020043]">4.8 <span><img src="https://i.postimg.cc/SsxzLYKx/star.png" alt="Star" /></span></h3>
                             <p className="text-[14px] text-[#020043] max-w-[130px] pb-5">Over 20,000 Patient</p>
                             <img src="https://i.postimg.cc/hjWRDSKf/members.png" alt="Pie Image" />
