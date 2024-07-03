@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (
-        <div className="bg-[url('https://i.postimg.cc/VN4X1NqF/bg.jpg')] h-[1050px] bg-cover w-full cbg-no-repeat ">
+        <div className="bg-[url('https://i.postimg.cc/yNSSVpGR/bg.jpg')] h-auto w-full bg-center pb-20 bg-cover bg-no-repeat -mt-1 ">
             <div className="container mx-auto px-5 pt-24">
                 <div className="h-[470px] w-full bg-[url('https://i.postimg.cc/0j5CPR7Q/Rectangle-5.png')] bg-cover bg-center bg-no-repeat rounded-[35px]">
                     <div className="h-full w-full  rounded-[35px] bg-custom-gradient"></div>
@@ -10,7 +10,7 @@ const Banner = () => {
                     <div>
                         <h2 className="max-w-[532px] text-[48px] font-bold text-[#020043] leading-[116.9%] text-center mx-auto pt-10">Comprehensive Care for Every Patient</h2>
                     </div>
-                    <div className="flex justify-between gap-5 items-end -mt-20">
+                    <div className="flex flex-col lg:flex-row justify-between gap-5 items-end mt-10 lg:-mt-20">
                         <div className="bg-white p-5 border border-gray-300 rounded-2xl w-full">
                             <h3 className="text-[40px] font-semibold text-[#020043]">90%</h3>
                             <p className="text-[14px] text-[#020043] max-w-[130px] pb-6">Patient satisfaction rate, reflecting our commitment.</p>

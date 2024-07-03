@@ -1,17 +1,4 @@
 import { Typography } from "@material-tailwind/react";
-
-const LINKS = [
-    {
-        title: "Product",
-        items: ["Home", "About Us", "Success Page", "Terms And Condition"],
-    },
-    {
-        title: "Company",
-        items: ["Services", "Scheduling", "Contact Us", "Patient Portal"],
-    },
-
-];
-
 const currentYear = new Date().getFullYear();
 
 const Footer = () => {
@@ -30,26 +17,96 @@ const Footer = () => {
                                 <p>(Available : 10:00am to 07:00pm)</p>
                             </div>
                         </Typography>
-                        <div className="grid grid-cols-3 justify-between gap-4 items-end">
-                            {LINKS.map(({ title, items }) => (
-                                <ul key={title}>
-                                    {items.map((link) => (
-                                        <li key={link}>
-                                            <Typography
-                                                as="a"
-                                                href="#"
-                                                color="gray"
-                                                className="py-1.5 text-white font-normal transition-colors hover:text-yellow-600"
-                                            >
-                                                {link}
-                                            </Typography>
-                                        </li>
-                                    ))}
-                                </ul>
-                            ))}
+                        <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-4 items-end">
+                            <ul key="Product">
+                                <li key="Home">
+                                    <Typography
+                                        as="a"
+                                        href="#"
+                                        color="gray"
+                                        className="py-1.5 text-white font-normal transition-colors hover:text-yellow-600"
+                                    >
+                                        Home
+                                    </Typography>
+                                </li>
+                                <li key="About Us">
+                                    <Typography
+                                        as="a"
+                                        href="#"
+                                        color="gray"
+                                        className="py-1.5 text-white font-normal transition-colors hover:text-yellow-600"
+                                    >
+                                        About Us
+                                    </Typography>
+                                </li>
+                                <li key="Success Page">
+                                    <Typography
+                                        as="a"
+                                        href="#"
+                                        color="gray"
+                                        className="py-1.5 text-white font-normal transition-colors hover:text-yellow-600"
+                                    >
+                                        Success Page
+                                    </Typography>
+                                </li>
+                                <li key="Terms And Condition">
+                                    <Typography
+                                        as="a"
+                                        href="#"
+                                        color="gray"
+                                        className="py-1.5 text-white font-normal transition-colors hover:text-yellow-600"
+                                    >
+                                        Terms And Condition
+                                    </Typography>
+                                </li>
+                            </ul>
+
+                            <ul key="Company">
+                                <li key="Services">
+                                    <Typography
+                                        as="a"
+                                        href="#"
+                                        color="gray"
+                                        className="py-1.5 text-white font-normal transition-colors hover:text-yellow-600"
+                                    >
+                                        Services
+                                    </Typography>
+                                </li>
+                                <li key="Scheduling">
+                                    <Typography
+                                        as="a"
+                                        href="#"
+                                        color="gray"
+                                        className="py-1.5 text-white font-normal transition-colors hover:text-yellow-600"
+                                    >
+                                        Scheduling
+                                    </Typography>
+                                </li>
+                                <li key="Contact Us">
+                                    <Typography
+                                        as="a"
+                                        href="#"
+                                        color="gray"
+                                        className="py-1.5 text-white font-normal transition-colors hover:text-yellow-600"
+                                    >
+                                        Contact Us
+                                    </Typography>
+                                </li>
+                                <li key="Patient Portal">
+                                    <Typography
+                                        as="a"
+                                        href="#"
+                                        color="gray"
+                                        className="py-1.5 text-white font-normal transition-colors hover:text-yellow-600"
+                                    >
+                                        Patient Portal
+                                    </Typography>
+                                </li>
+                            </ul>
+
                             <div>
                                 <h1 className="text-white text-xl font-semibold ml-4 pb-5">Follow Us : </h1>
-                                <div className="flex gap-4 text-white sm:justify-center pb-10">
+                                <div className="flex gap-4 text-white pb-10">
                                     <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
                                         <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                             <path

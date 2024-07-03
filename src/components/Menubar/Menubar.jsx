@@ -71,7 +71,7 @@ const Menubar = () => {
     return (
         <div>
             <div className="container mx-auto px-5">
-                <Navbar style={{ backgroundColor: "#E4E3EA"}} className="fixed top-0 z-90 w-full sm:max-w-[640px] md:max-w-[768px] border-transparent lg:max-w-[1024px] xl:max-w-[1280px] rounded-none shadow-none px-4 py-2 lg:px-8 lg:py-4 bg-transparent backdrop-blur-none backdrop-saturate-30">
+                <Navbar className="fixed -top-0 left-[50%] -translate-x-1/2 z-10 backdrop-saturate-30 bg-opacity-100 rounded-none backdrop-blur-1 bg-transparent border-none py-5 shadow-none border">
                     <div className="flex items-center justify-between text-blue-gray-900">
                         <Typography
                             as="span"
@@ -121,7 +121,7 @@ const Menubar = () => {
                                 )}
                             </IconButton>
                         </div>
-                        <div className="flex items-center gap-x-1">
+                        <div className="items-center gap-x-1 hidden lg:flex">
                             <Button
                                 variant="gradient"
                                 size="sm"
@@ -135,9 +135,13 @@ const Menubar = () => {
                     <MobileNav open={openNav}>
                         {navList}
                         <div className="flex items-center gap-x-1">
-
-                            <Button fullWidth variant="gradient" size="sm" className="">
-                                <span>Sign in <PiArrowUpRightBold /> </span>
+                            <Button
+                                variant="gradient"
+                                size="sm"
+                                className="hidden lg:inline-block border border-[#020043] text-[#020043] rounded-lg"
+                                style={{ background: "#fff", backgroundColor: "transparent" }}
+                            >
+                                <span style={{ fontFamily: "Inter" }} className="flex font-medium justify-items-center items-center gap-1 normal-case ">Appointment <PiArrowUpRightBold /> </span>
                             </Button>
                         </div>
                     </MobileNav>
